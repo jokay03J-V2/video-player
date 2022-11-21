@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="site description">
-    <title>Hello</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <script src="./js/app.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="video player">
+  <title>video player</title>
+</head>
+
+<body>
+  <div id="video-player">
+    <video id="video">
+      <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4">
+    </video>
+    <img  id="play-btn" src="./assets/play.svg">
+    <img id="pause-btn" src="./assets/pause.svg">
+    <div id="controls">
+      <button id="b-10s">back 10s</button>
+      <button id="s-10s">skip 10s</button>
+      <button id="reset">reset</button>
+      <progress value="0" max="100" id="progress-bar"></progress>
+    </div>
+  </div>
+  <script src="./js/app.js" type="module"></script>
+</body>
+
 </html>
